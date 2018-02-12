@@ -184,13 +184,15 @@ system properties will be used to specify the upstream proxy.
 ### Command-line Arguments
 
  - -port \<port\>
-  - Port on which the API listens. Default value is 8080.
+   Port on which the API listens. Default value is 8080.
  - -address <address>
-  - Address to which the API is bound. Default value is 0.0.0.0.
+   Address to which the API is bound. Default value is 0.0.0.0.
  - -proxyPortRange \<from\>-\<to\>
-  - Range of ports reserved for proxies. Only applies if *port* parameter is not supplied in the POST request. Default values are \<port\>+1 to \<port\>+500+1.
+   Range of ports reserved for proxies. Only applies if *port* parameter is not supplied in the POST request. Default values are \<port\>+1 to \<port\>+500+1.
  - -ttl \<seconds\>
-  - Proxy will be automatically deleted after a specified time period. Off by default.
+   Proxy will be automatically deleted after a specified time period. Off by default.
+ - -chainProxy \<IP>:\<Port>
+    Address of proxy that browsermod will connect to (proxy chaining)
 
 ### Embedded Mode
 
